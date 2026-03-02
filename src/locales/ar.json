@@ -1,0 +1,67 @@
+{
+    "pos": "نقطة البيع",
+    "dashboard": "لوحة التحكم",
+    "dashboardOverview": "نظرة عامة للحسابات",
+    "brandName": "Gusto",
+    "brandSubtitle": "نظام مبيعات",
+    "cashier": "كاشير",
+    "admin": "المدير",
+    "newOrder": "طلب جديد",
+    "categories": {
+        "burgers": "برجر",
+        "pizzas": "بيتزا",
+        "drinks": "مشروبات",
+        "desserts": "حلويات"
+    },
+    "cart": {
+        "currentOrder": "الطلب الحالي",
+        "empty": "السلة فارغة",
+        "subtotal": "المجموع الفرعي",
+        "tax": "الضريبة (8%)",
+        "total": "المجموع الكلي",
+        "clear": "إلغاء",
+        "checkout": "دفع",
+        "checkoutSuccess": "تم تسجيل الطلب بنجاح!"
+    },
+    "stats": {
+        "revenue": "أرباح اليوم",
+        "orders": "إجمالي الطلبات",
+        "avgValue": "متوسط قيمة الطلب",
+        "customers": "العملاء النشطون",
+        "reset": "تصفير الحسابات"
+    },
+    "recentOrders": {
+        "title": "الطلبات الأخيرة",
+        "viewAll": "عرض الكل",
+        "orderId": "رقم الطلب",
+        "time": "الوقت",
+        "items": "العناصر",
+        "total": "المبلغ",
+        "status": "الحالة",
+        "completed": "مكتمل",
+        "processing": "قيد التحضير"
+    },
+    "inventory": {
+        "title": "إدارة المنيو",
+        "categories": "الأقسام",
+        "catId": "معرف القسم",
+        "catName": "اسم القسم",
+        "menuItems": "قائمة الطعام",
+        "itemName": "اسم الصنف",
+        "price": "السعر",
+        "cat": "القسم",
+        "addItem": "إضافة صنف",
+        "name": "الاسم",
+        "action": "الإجراء",
+        "delete": "حذف",
+        "imageUrl": "رابط الصورة (اختياري)"
+    },
+    "auth": {
+        "subtitle": "نظام إدارة المطاعم",
+        "username": "اسم المستخدم",
+        "password": "كلمة المرور",
+        "loginBtn": "تسجيل الدخول",
+        "invalidCreds": "اسم المستخدم أو كلمة المرور غير صحيحة",
+        "logout": "تسجيل الخروج"
+    }
+}

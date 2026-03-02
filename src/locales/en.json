@@ -1,0 +1,67 @@
+{
+  "pos": "Point of Sale",
+  "dashboard": "Dashboard",
+  "dashboardOverview": "Dashboard Overview",
+  "brandName": "Gusto",
+  "brandSubtitle": "POS System",
+  "cashier": "Cashier",
+  "admin": "Admin",
+  "newOrder": "New Order",
+  "categories": {
+    "burgers": "Burgers",
+    "pizzas": "Pizzas",
+    "drinks": "Drinks",
+    "desserts": "Desserts"
+  },
+  "cart": {
+    "currentOrder": "Current Order",
+    "empty": "Cart is empty",
+    "subtotal": "Subtotal",
+    "tax": "Tax (8%)",
+    "total": "Total",
+    "clear": "Clear",
+    "checkout": "Checkout",
+    "checkoutSuccess": "Order placed successfully!"
+  },
+  "stats": {
+    "revenue": "Today's Revenue",
+    "orders": "Total Orders",
+    "avgValue": "Average Order Value",
+    "customers": "Active Customers",
+    "reset": "Reset Data"
+  },
+  "recentOrders": {
+    "title": "Recent Orders",
+    "viewAll": "View All",
+    "orderId": "Order ID",
+    "time": "Time",
+    "items": "Items",
+    "total": "Total",
+    "status": "Status",
+    "completed": "Completed",
+    "processing": "Processing"
+  },
+  "inventory": {
+    "title": "Inventory Setup",
+    "categories": "Categories",
+    "catId": "Category ID",
+    "catName": "Category Name",
+    "menuItems": "Menu Items",
+    "itemName": "Item Name",
+    "price": "Price",
+    "cat": "Category",
+    "addItem": "Add Item",
+    "name": "Name",
+    "action": "Action",
+    "delete": "Delete",
+    "imageUrl": "Image URL (Optional)"
+  },
+  "auth": {
+    "subtitle": "Restaurant Management System",
+    "username": "Username",
+    "password": "Password",
+    "loginBtn": "Sign In",
+    "invalidCreds": "Invalid username or password",
+    "logout": "Logout"
+  }
+}
