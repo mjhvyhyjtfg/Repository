@@ -39,19 +39,8 @@ const POS = () => {
     const clearCart = () => setCart([]);
 
     return (
-        <div style={{
-            display: 'flex',
-            gap: '24px',
-            width: '100%',
-            height: 'calc(100vh - 80px - 64px)', // Adjust for header and padding
-            overflow: 'hidden'
-        }}>
-            <div style={{
-                flex: 1,
-                display: 'flex',
-                flexDirection: 'column',
-                overflow: 'hidden'
-            }}>
+        <div className="pos-layout">
+            <div className="menu-container">
                 <MenuGrid
                     categories={categories}
                     menuItems={menuItems}
