@@ -23,8 +23,13 @@ const Header = ({ activeTab }) => {
 
     return (
         <header className="glass-panel top-header">
-            <div className="header-title">
-                <h1>{titleMap[activeTab] || t('pos')}</h1>
+            <div className="header-left">
+                <button className="menu-toggle" onClick={onMenuClick}>
+                    ☰
+                </button>
+                <div className="header-title">
+                    <h1>{titleMap[activeTab] || t('pos')}</h1>
+                </div>
             </div>
 
             <div className="header-actions">

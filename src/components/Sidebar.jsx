@@ -2,14 +2,19 @@ import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { useAuth } from '../context/AuthContext';
 
-const Sidebar = ({ activeTab, setActiveTab }) => {
+const Sidebar = ({ activeTab, setActiveTab, isOpen, onClose }) => {
     const { t } = useLanguage();
     const { logout } = useAuth();
     return (
-        <aside className="glass-panel sidebar">
-            <div className="brand">
-                <h2>Gusto</h2>
-                <span className="brand-subtitle">{t('brandSubtitle')}</span>
+        <aside className={`glass-panel sidebar ${isOpen ? 'open' : ''}`}>
+            <div className="sidebar-header">
+                <div className="brand">
+                    <h2>Gusto</h2>
+                    <span className="brand-subtitle">{t('brandSubtitle')}</span>
+                </div>
+                <button className="close-sidebar" onClick={onClose}>
+                    ✕
+                </button>
             </div>
 
             <nav className="nav-menu">
