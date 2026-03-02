@@ -5,8 +5,12 @@ const OrdersContext = createContext();
 export const OrdersProvider = ({ children }) => {
     // Initialize from localStorage or empty array
     const [orders, setOrders] = useState(() => {
-        const savedOrders = localStorage.getItem('pos_orders');
-        return savedOrders ? JSON.parse(savedOrders) : [];
+        try {
+            const savedOrders = localStorage.getItem('pos_orders');
+            return savedOrders ? JSON.parse(savedOrders) : [];
+        } catch (e) {
+            return [];
+        }
     });
 
     // Persist to localStorage whenever orders change

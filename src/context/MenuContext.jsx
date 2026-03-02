@@ -25,13 +25,23 @@ const MenuContext = createContext();
 export const MenuProvider = ({ children }) => {
     // Initialize from localStorage or initial data
     const [categories, setCategories] = useState(() => {
-        const saved = localStorage.getItem('pos_categories');
-        return saved ? JSON.parse(saved) : initialCategories;
+        try {
+            const saved = localStorage.getItem('pos_categories');
+            return saved ? JSON.parse(saved) : initialCategories;
+        } catch (e) {
+            console.warn("Failed to parse categories:", e);
+            return initialCategories;
+        }
     });
 
     const [menuItems, setMenuItems] = useState(() => {
-        const saved = localStorage.getItem('pos_menu_items');
-        return saved ? JSON.parse(saved) : initialMenuItems;
+        try {
+            const saved = localStorage.getItem('pos_menu_items');
+            return saved ? JSON.parse(saved) : initialMenuItems;
+        } catch (e) {
+            console.warn("Failed to parse menu items:", e);
+            return initialMenuItems;
+        }
     });
 
     // Save to localStorage on change
