@@ -4,7 +4,7 @@ import { useMenu } from '../context/MenuContext';
 
 const Inventory = () => {
     const { t } = useLanguage();
-    const { categories, menuItems, addCategory, deleteCategory, addMenuItem, deleteMenuItem } = useMenu();
+    const { categories, menuItems, addCategory, deleteCategory, addItem, deleteItem } = useMenu();
 
     const [activeTab, setActiveTab] = useState('items'); // 'items' or 'categories'
 
@@ -30,7 +30,7 @@ const Inventory = () => {
         if (!newItemName || !newItemPrice || !newItemCat) return;
         const fallbackImage = `https://loremflickr.com/300/200/${encodeURIComponent(newItemName)},food/all`;
         const finalImage = newItemImage.trim() !== '' ? newItemImage : fallbackImage;
-        addMenuItem({
+        addItem({
             category: newItemCat,
             name: newItemName,
             price: parseFloat(newItemPrice),
@@ -133,7 +133,7 @@ const Inventory = () => {
                                             <td style={{ color: 'var(--accent-primary)', fontWeight: '700' }}>${item.price.toFixed(2)}</td>
                                             <td><span style={{ padding: '4px 10px', background: 'rgba(255,255,255,0.05)', borderRadius: 'var(--radius-full)', fontSize: '0.8rem' }}>{item.category}</span></td>
                                             <td style={{ textAlign: 'center' }}>
-                                                <button className="btn btn-danger" onClick={() => deleteMenuItem(item.id)} style={{ padding: '6px 12px' }}>
+                                                <button className="btn btn-danger" onClick={() => deleteItem(item.id)} style={{ padding: '6px 12px' }}>
                                                     🗑️ {t('inventory.delete')}
                                                 </button>
                                             </td>
